@@ -1,0 +1,26 @@
+.main-container {
+  background-color: rgb(229, 216, 200);
+  display: flex;
+  flex-direction: column;
+  height: 39rem;
+  width: 100vw;
+}
+
+.link-container {
+  background-image: url('../thumbs/gof.jpeg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 27rem;
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT';
+  font-weight: 500;
+  margin: 5px;
+  padding: 5px;
+}
