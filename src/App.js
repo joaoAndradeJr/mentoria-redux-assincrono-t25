@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Pages/Home';
-import CharacterDetails from './Pages/CharacterDetails';
+import CharacterCard from './Components/CharacterCard';
 import NotFound from './Pages/NotFound';
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <Switch>
         <Route exact path="/" component={ Home } />
-        <Route path="/character/:id" component={ CharacterDetails } />
+        <Route path="/character/:id" component={ CharacterCard } />
         <Route path="*" component={ NotFound } />
       </Switch>
     );

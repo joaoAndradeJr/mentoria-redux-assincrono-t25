@@ -4,8 +4,12 @@ import allCharacters from '../data';
 import './Home.css';
 
 class Home extends Component {
-  render() {
+  handleClick = (id) => {
     const { history } = this.props;
+    history.push(`/character/${id}`)
+  };
+
+  render() {
     return (
       <main className="main-container">
         <section className="link-container">
@@ -15,7 +19,7 @@ class Home extends Component {
                 type="button"
                 key={ `${index}${chacarter.fullName}` }
                 className="button"
-                onClick={ () => history.push(`/character/${chacarter.id}`) }
+                onClick={ () => this.handleClick(chacarter.id) }
               >
                 { chacarter.fullName }
               </button>
