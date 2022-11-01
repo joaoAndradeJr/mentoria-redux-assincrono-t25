@@ -1,4 +1,4 @@
-const APIURL = 'https://thronesapi.com/api/v2/Characters/'
+const APIURL = 'https://thronesapi.com/api/v2/Characters/';
 
 const getCharacterDetails = (id) => (
   fetch(`${APIURL}${id}`)
